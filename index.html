@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sahid Fitness is a premium gym in Dibrugarh with coaching, strength training, conditioning, and community-led fitness programs.">
+    <title>Sahid Fitness | Premium Gym in Dibrugarh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/pages.css">
+</head>
+<body>
+    <header class="site-header fade-in">
+        <a class="brand" href="index.html" aria-label="Sahid Fitness home">
+            <img src="./assets/barbell.jpg" alt="Sahid Fitness Logo">
+            <span>SAHID FITNESS</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Drawer Wrapper -->
+        <div class="nav-drawer" id="nav-drawer">
+            <div class="drawer-header">
+                <span class="drawer-brand">SAHID FITNESS</span>
+                <button class="menu-close" id="menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <!-- Change the 'active' class on the specific links per page -->
+                <a href="index.html" class="active">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/fitnesscentre.html">Facility</a>
+                <a href="./pages/contactus.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="ghost-button" href="#">Call</a>
+                <a class="primary-button small" href="mailto:info@sahidfitness.com">Join Now</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Background Dark Overlay for Mobile Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main>
+        <section class="hero fade-in delay-1">
+            <div class="hero-copy">
+                <p class="eyebrow">Dibrugarh's Elite Performance Club</p>
+                <h1>BUILD STRENGTH. <br><span class="text-gradient">DEFY LIMITS.</span></h1>
+                <p class="hero-text">Train in a premium facility with structured workouts, certified guidance, and a serious fitness atmosphere designed for real progress.</p>
+
+                <div class="hero-actions">
+                    <a class="primary-button" href="#membership-form">Start Membership</a>
+                    <a class="secondary-button" href="./pages/fitnesscentre.html">Explore Facility</a>
+                </div>
+
+                <div class="stats-grid" aria-label="Gym highlights">
+                    <div>
+                        <strong>5 AM</strong>
+                        <span>Opening time</span>
+                    </div>
+                    <div>
+                        <strong>1:1</strong>
+                        <span>Trainer support</span>
+                    </div>
+                    <div>
+                        <strong>2020</strong>
+                        <span>Serving Dibrugarh</span>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="lead-card glass-panel" id="membership-form" aria-label="Membership enquiry form">
+                <span class="card-kicker">Limited trial slots</span>
+                <h2>BOOK FREE ASSESSMENT</h2>
+                <p>Share your details and our team will help you choose the right training plan.</p>
+
+                <form action="./php/form-handler.php" method="post">
+                    <label>
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your full name" required>
+                    </label>
+                    <div class="form-row">
+                        <label>
+                            <span>Age</span>
+                            <input type="number" name="age" placeholder="Age" min="12" max="90" required>
+                        </label>
+                        <label>
+                            <span>Gender</span>
+                            <select name="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>
+                        <span>Locality</span>
+                        <input type="text" name="locality" placeholder="Your area in Dibrugarh" required>
+                    </label>
+                    <label>
+                        <span>Phone</span>
+                        <input type="tel" name="phone" placeholder="+91 98765 43210" required>
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com">
+                    </label>
+                    <button class="primary-button form-button" type="submit">Request Callback</button>
+                </form>
+            </aside>
+        </section>
+
+        <section class="section-band fade-in delay-2">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Why train here</p>
+                    <h2>BUILT AROUND PROGRESS YOU CAN FEEL.</h2>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card glass-panel hover-lift">
+                    <span class="feature-number">01</span>
+                    <h3>Structured Coaching</h3>
+                    <p>Personal guidance for beginners, lifters, and anyone returning after a break. No more guessing your routine.</p>
+                </article>
+                <article class="feature-card glass-panel hover-lift">
+                    <span class="feature-number">02</span>
+                    <h3>Complete Strength Zone</h3>
+                    <p>Premium free weights, resistance machines, competition racks, benches, and dedicated conditioning tools.</p>
+                </article>
+                <article class="feature-card glass-panel hover-lift">
+                    <span class="feature-number">03</span>
+                    <h3>Flexible Training Hours</h3>
+                    <p>Early morning to late evening access so your routine survives busy days. Train when it suits your lifestyle.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>SAHID FITNESS</h3>
+                <p>Dibrugarh's premier strength and conditioning facility.</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 Sahid Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+</html>

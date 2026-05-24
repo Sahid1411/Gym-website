@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Sahid Fitness facilities including strength training, cardio, group classes, and personal coaching in Dibrugarh.">
+    <title>Fitness Centre | Sahid Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <header class="site-header fade-in">
+        <a class="brand" href="../index.html" aria-label="Sahid Fitness home">
+            <img src="../assets/barbell.jpg" alt="Sahid Fitness Logo">
+            <span>SAHID FITNESS</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Drawer Wrapper -->
+        <div class="nav-drawer" id="nav-drawer">
+            <div class="drawer-header">
+                <span class="drawer-brand">SAHID FITNESS</span>
+                <button class="menu-close" id="menu-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="site-nav" aria-label="Primary navigation">
+                <!-- Change the 'active' class on the specific links per page -->
+                <a href="../index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="fitnesscentre.html" class="active">Facility</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a class="ghost-button" href="#">Call</a>
+                <a class="primary-button small" href="mailto:info@sahidfitness.com">Join Now</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Background Dark Overlay for Mobile Drawer -->
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+
+    <main class="section-wrapper">
+        <section class="page-hero fade-in delay-1">
+            <p class="eyebrow">The Facility</p>
+            <h1>TRAIN WITH THE EQUIPMENT AND ENERGY YOUR GOALS DESERVE.</h1>
+            <p>Our gym is designed for practical, repeatable progress with dedicated zones for strength, cardio, mobility, and coached sessions.</p>
+        </section>
+
+        <section class="content-grid fade-in delay-2">
+            <article class="content-panel glass-panel hover-lift">
+                <h2>Strength Zone</h2>
+                <ul>
+                    <li>Dumbbells, barbells, kettlebells, and benches</li>
+                    <li>Squat racks and bench-press stations</li>
+                    <li>Resistance machines for full-body training</li>
+                </ul>
+            </article>
+
+            <article class="content-panel glass-panel hover-lift">
+                <h2>Cardio & Conditioning</h2>
+                <ul>
+                    <li>Treadmills, ellipticals, and stair climbers</li>
+                    <li>HIIT-friendly training space</li>
+                    <li>Programs for fat loss and endurance</li>
+                </ul>
+            </article>
+
+            <article class="content-panel glass-panel hover-lift">
+                <h2>Group Classes</h2>
+                <ul>
+                    <li>Yoga and mobility sessions</li>
+                    <li>Zumba and dance fitness</li>
+                    <li>High-energy circuit training</li>
+                </ul>
+            </article>
+
+            <article class="content-panel glass-panel hover-lift">
+                <h2>Personal Training</h2>
+                <p>Work one-on-one with a trainer for form checks, customized workouts, progress tracking, and a plan that fits your current fitness level.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer glass-panel">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>SAHID FITNESS</h3>
+                <p>Dibrugarh's premier strength and conditioning facility.</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 Sahid Fitness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+</html>
