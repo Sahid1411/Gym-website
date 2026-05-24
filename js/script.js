@@ -19,4 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
             menuToggle.addEventListener('click', openMenu);
             menuClose.addEventListener('click', closeMenu);
             overlay.addEventListener('click', closeMenu); // Close when clicking outside
-        });
+});
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevents the PHP file from executing on Vercel
+    alert('Thank you for trying out the demo! Form submissions are currently disabled in the live preview.');
+});
